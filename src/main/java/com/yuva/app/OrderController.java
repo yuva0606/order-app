@@ -1,10 +1,7 @@
 package com.yuva.app;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/orders")
@@ -15,6 +12,11 @@ public class OrderController {
 
     @Autowired
     private UserClient userClient;
+
+    @GetMapping("/test")
+    public String testRun(){
+        return "hey there";
+    }
 
     @PostMapping
     public Order createOrder(@RequestParam Long userId, @RequestParam String product) {
