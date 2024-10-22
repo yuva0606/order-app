@@ -30,4 +30,4 @@ jobs:
     - name: Build and Push Docker image
       env:
         DOCKER_PWD: ${{secrets.DOCKER_PWD}}
-      run: mvn -B spring-boot:build-push -DskipTests
+      run: mvn -B spring-boot:build-image -DskipTests
