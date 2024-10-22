@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: order-app
-        image: yuva0606/testapp/order:latest
+        image: yuva0606/order:latest
         ports:
         - containerPort: 8080
 ---
