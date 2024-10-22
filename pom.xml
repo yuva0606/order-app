@@ -78,10 +78,10 @@
 						<publish>true</publish>
 					</image>
 					<docker>
-						<publicRegistry>
+						<publishRegistry>
 							<username>yuva0606</username>
 							<password>${env.DOCKER_PWD}</password>
-						</publicRegistry>
+						</publishRegistry>
 					</docker>
 				</configuration>
 			</plugin>
